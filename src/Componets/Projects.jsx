@@ -216,7 +216,7 @@ Farfetch is individual project made in 5 days.
       >
         <GridItem>
           <Card
-            img={"https://indian-retailer.s3.ap-south-1.amazonaws.com/s3fs-public/2022-09/Licious%20New%20Logo%20.jpg"}
+            img={"https://indian-retailer.s3.ap-south-1.amazonaws.com/s3fs-public/2021-03/Licious_0.jpg"}
             tag={["Collaborative", "E-Commerce"]}
             tsTags={["HTML", "CSS", "JavaScript", "ES-6", "LocalStorage"]}
             heading={"Licious-CLONE"}
@@ -246,6 +246,28 @@ Farfetch is individual project made in 5 days.
             }
             deploy={"https://chipper-concha-2dfafa.netlify.app"}
             git={"https://github.com/sbj1198/alive-run-138"}
+          />
+        </GridItem>
+
+        <GridItem>
+          <Card
+            img={
+              "https://thumbs.dreamstime.com/b/online-shopping-website-laptop-screen-female-hands-typing-51465695.jpg"
+            }
+            tag={["Collaborative", "E-Commerce"]}
+            tsTags={[
+              "React",
+              "CSS",
+              "JavaScript",
+              "Redux",
+              "Chakra UI",
+            ]}
+            heading={"Aqua shop-Clone"}
+            content={
+              " This Project was a collaborative project buit by team of 5 members in 5 days. It is an E-commerce website "
+            }
+            deploy={"https://tranquil-granita-3b97e2.netlify.app"}
+            git={"https://github.com/NarayandasGanesh/Aquashop.com/tree/main/shop"}
           />
         </GridItem>
 
