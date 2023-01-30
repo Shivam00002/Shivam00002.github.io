@@ -271,6 +271,28 @@ Farfetch is individual project made in 5 days.
           />
         </GridItem>
 
+
+        <GridItem>
+          <Card
+            img={
+              "https://www.idfcfirstbank.com/content/dam/idfcfirstbank/images/offers/debit-offers/TATACLiQLOGO-NEW.jpg"
+            }
+            tag={["Collaborative", "E-Commerce"]}
+            tsTags={[
+              "React",
+              "CSS",
+              "JavaScript",
+              "Redux",
+              "Chakra UI",
+            ]}
+            heading={"Tata Cliq-Clone"}
+            content={
+              " This Project was a collaborative project buit by team of 5 members in 5 days. It is an E-commerce website "
+            }
+            deploy={"https://formalclick.netlify.app"}
+            git={"https://github.com/blackcode1996/vigorous-driving-4005"}
+          />
+        </GridItem>
        {/* Add More */}
        
       </Grid>
