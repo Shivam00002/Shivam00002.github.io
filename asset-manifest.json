@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/static/css/main.27af7ce8.css",
-    "main.js": "/static/js/main.a7295bd7.js",
+    "main.js": "/static/js/main.02288a12.js",
     "static/js/787.1f11dfe9.chunk.js": "/static/js/787.1f11dfe9.chunk.js",
     "static/media/Shivam_Dubey_Resume.pdf": "/static/media/Shivam_Dubey_Resume.39f817831cef12eb63ed.pdf",
     "index.html": "/index.html",
     "main.27af7ce8.css.map": "/static/css/main.27af7ce8.css.map",
-    "main.a7295bd7.js.map": "/static/js/main.a7295bd7.js.map",
+    "main.02288a12.js.map": "/static/js/main.02288a12.js.map",
     "787.1f11dfe9.chunk.js.map": "/static/js/787.1f11dfe9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.27af7ce8.css",
-    "static/js/main.a7295bd7.js"
+    "static/js/main.02288a12.js"
   ]
 }
