@@ -147,6 +147,7 @@ const Projects = () => {
               "JavaScript",
               "ES-6",
               "HTML",
+              , "Redux"
             
             ]}
           />
@@ -198,7 +199,7 @@ Farfetch is individual project made in 5 days.
               <Link
                 _hover={{ textDecoration: "none" }}
                 target="_blank"
-                href={"https://thunderous-daffodil-4e1dfc.netlify.app/"}
+                href={"https://fabulous-starship-62dd6f.netlify.app"}
               >
                 Deployment
               </Link>
@@ -215,19 +216,34 @@ Farfetch is individual project made in 5 days.
         gap={"2"}
       >
         <GridItem>
-          <Card
-            img={"https://indian-retailer.s3.ap-south-1.amazonaws.com/s3fs-public/2021-03/Licious_0.jpg"}
+          <Card 
+            img={"https://user-images.githubusercontent.com/105977022/221477963-c98dc629-b351-4b07-b905-72813d035ade.png"}
+             
+           
             tag={["Collaborative", "E-Commerce"]}
-            tsTags={["HTML", "CSS", "JavaScript", "ES-6", "LocalStorage"]}
-            heading={"Licious-CLONE"}
+
+            tsTags={["HTML", "CSS", "JavaScript", "React" , "Redux", "Express","Node Js", "Chakra Ui"]}
+            heading={"Bigbasket-Clone"}
             content={
-              "This is a clone of Licious with it's simple and eye-cathcing UI."
+              "Big Blow is one of the largest online grocery super market in India. Customers order groceries through online website which will be delivered to their doorstep."
             }
-            deploy={"https://subtle-piroshki-2fe672.netlify.app/"}
-            git={"https://github.com/Shivam00002/radioactive-lip-3578"}
+            deploy={"https://big-blow.vercel.app/"}
+            git={"https://github.com/Shivam00002/bigbasket-clone"}
           />
         </GridItem>
-        <GridItem>
+       
+
+
+       
+
+
+
+
+
+
+
+
+        {/* <GridItem>
           <Card
             img={
               "https://img1.hscicdn.com/image/upload/f_auto/lsci/db/PICTURES/CMS/314800/314891.png"
@@ -247,7 +263,7 @@ Farfetch is individual project made in 5 days.
             deploy={"https://chipper-concha-2dfafa.netlify.app"}
             git={"https://github.com/sbj1198/alive-run-138"}
           />
-        </GridItem>
+        </GridItem> */}
 
         <GridItem>
           <Card
@@ -272,7 +288,7 @@ Farfetch is individual project made in 5 days.
         </GridItem>
 
 
-        <GridItem>
+        <GridItem bor>
           <Card
             img={
               "https://www.idfcfirstbank.com/content/dam/idfcfirstbank/images/offers/debit-offers/TATACLiQLOGO-NEW.jpg"
@@ -293,6 +309,24 @@ Farfetch is individual project made in 5 days.
             git={"https://github.com/blackcode1996/vigorous-driving-4005"}
           />
         </GridItem>
+
+
+
+        <GridItem>
+          <Card
+            img={"https://indian-retailer.s3.ap-south-1.amazonaws.com/s3fs-public/2021-03/Licious_0.jpg"}
+            tag={["Collaborative", "E-Commerce"]}
+            tsTags={["HTML", "CSS", "JavaScript", "ES-6", "LocalStorage" ]}
+            heading={"Licious-CLONE"}
+            content={
+              "This is a clone of Licious with it's simple and eye-cathcing UI."
+            }
+            deploy={"https://subtle-piroshki-2fe672.netlify.app/"}
+            git={"https://github.com/Shivam00002/radioactive-lip-3578"}
+          />
+        </GridItem>
+
+
        {/* Add More */}
        
       </Grid>

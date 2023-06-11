@@ -14,7 +14,7 @@ import {
   } from "@chakra-ui/react";
   import { MdSettings, MdCheckCircle } from "react-icons/md";
   import { Link } from "react-scroll";
-  
+  import styles from "./Style.module.css";
   const Feature = ({ heading, text }) => {
     return (
       <GridItem>
@@ -28,7 +28,7 @@ import {
   
   export default function Education() {
     return (
-      <Box as={Container} maxW="7xl" mt={14} p={4} id="Experience">
+      <Box  className={styles.edubox} as={Container} maxW="7xl" mt={14} p={4} id="Experience">
         <Grid
           templateColumns={{
             base: "repeat(1, 1fr)",
@@ -37,7 +37,7 @@ import {
           }}
           gap={4}
         >
-          <GridItem colSpan={1}>
+          <GridItem className={styles.education}   colSpan={1}>
             <VStack alignItems="flex-start" spacing="20px">
               <chakra.h2 fontSize="3xl" fontWeight="700">
              Education 
@@ -66,7 +66,7 @@ import {
           </GridItem>
           <GridItem>
             <Flex>
-              <chakra.p>
+              <chakra.p className={styles.bca}  >
                 <List spacing={3}>
                   <ListItem>
                     <ListIcon as={MdCheckCircle} color="green.500" />Full Stack Web Devlopent Course from Masai School, Banglore (Karnatka) full time.
@@ -83,8 +83,11 @@ import {
             </Flex>
           </GridItem>
         </Grid>
-        <Divider mt={12} mb={12} />
+        <Divider mt={11} mb={11} />
         <Grid
+        // border={"1px solid red"}
+        className={styles.skills}
+       textAlign={"center"}
           templateColumns={{
             base: "repeat(1, 1fr)",
             sm: "repeat(2, 1fr)",

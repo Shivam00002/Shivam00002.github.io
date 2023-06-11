@@ -13,8 +13,9 @@ import {
   import Typed from "react-typed";
   import {IconButton} from '@chakra-ui/button';
   import {FaDownload} from 'react-icons/fa';
-
+  import "./Navbar.css";
    import Res from "./Res";
+import Restwo from "./Restwo";
   export default function About() {
 
     const handleResume = () => {
@@ -44,6 +45,7 @@ import {
           <Stack spacing={6} w={"full"} maxW={"xl"}>
             <Heading fontSize={{ base: "3xl", md: "4xl", lg: "5xl" }}>
               <Text
+              className="typeshivam"
                 as={"span"}
                 position={"relative"}
                 _after={{
@@ -60,7 +62,7 @@ import {
                 Hi, I Am
               </Text>
               <br />
-              <Text  p={3} width='80%' color={"blue.400"} as={"span"}>
+              <Text  className="typeshivam" p={3} width='80%' color={"blue.400"} as={"span"}>
                 <Typed
                   strings={[
                     "Shivam Dubey",
@@ -98,7 +100,7 @@ import {
                 >
 
  
- <Res   marginLeft={"10px"}  />
+                                          <Restwo />
 
            
 
@@ -141,23 +143,23 @@ import {
           {colorMode == "dark" ? (
             <Image
               objectFit={"cover"}
-              className="zoom"
+              className="profileimg"
               width={["xs", "lg"]}
               height={["xs", "lg"]}
               src={
-                "https://lh3.googleusercontent.com/ogw/AOh-ky1go0PQP0hpGoqhGaY2EonRHl3zZnSHPcOAvDOm=s32-c-mo"
+                "https://ca.slack-edge.com/T04R62JBWR2-U04RBS5V4F7-bd2cdd5c152d-512"
               }
             />
           ) : (
             <Image
               alt={"Login Image"}
-              className="zoom"
+              className="profileimg"
               objectFit={"cover"}
               width={["xs", "lg"]}
               height={["xs", "lg"]}
-            
+              borderRadius="10px"
               src={
-                "https://ca.slack-edge.com/T049JC010P9-U04B0EBR7QU-2d5eb55e382a-192"
+                "https://ca.slack-edge.com/T04R62JBWR2-U04RBS5V4F7-bd2cdd5c152d-512"
               }
             />
           )}

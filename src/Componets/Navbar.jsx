@@ -1,39 +1,3 @@
-// import React from 'react';
-// import {VStack , Flex , Heading,Spacer} from '@chakra-ui/layout';
-// import {IconButton} from '@chakra-ui/button';
-// import {FaSun , FaMoon , FaInstagram , FaGithub , FaLinkedin,FaDownload} from 'react-icons/fa';
-// import { useColorMode } from '@chakra-ui/react';
-
-// const Navbar = () => {
-
-// const {colorMode , toggleColorMode} = useColorMode();
-// const isDark = colorMode==="dark";
-
-//   return (
-//     <>
-//     <VStack p={5}>
-//     <Flex w= "100%">
-// <Heading
-// ml="8" size="md" fontWeight="semibold" color="cyan.400"
-//   >Shivam</Heading>
-   
-//   <Spacer></Spacer>
-  
-//     <IconButton ml={2} icon={<FaLinkedin />} isRound="true" onClick={toggleColorMode}></IconButton>
-//     <IconButton ml={2} icon={<FaInstagram />} isRound="true" onClick={toggleColorMode}></IconButton>
-//     <IconButton ml={2} icon={<FaGithub />} isRound="true" onClick={toggleColorMode}></IconButton>
-
-// <IconButton ml={8} icon={isDark ? <FaSun /> : <FaMoon />} isRound="true" onClick={toggleColorMode}></IconButton>
-// </Flex>
-//     </VStack>
-//     </>
-//   )
-// }
-
-// export default Navbar
-
-
-
 import {
   Heading,
   Box,
@@ -56,32 +20,30 @@ import {
 import { MoonIcon, SunIcon, HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
 import { Link } from "react-scroll";
 import AvatarWithRipple from "./Avatar";
-import './Navbar.css';
+import "./Navbar.css";
 import Res from "./Res";
 
-const Links = ["About", "Skills", "Experience", "Projects", ];
+const Links = ["Home", "About", "Skills", "Experience", "Projects"];
 
 let activeStyle = {
   textDecoration: "none",
-  color: "red"
+  color: "red",
 };
 let normal_syle = {
   textDecoration: "none",
-  color: "green"
+  color: "green",
 };
 
-
 const NavLink = ({ children }) => (
-
   <Link
     style={{ cursor: "pointer" }}
-   
     px={2}
     py={1}
     rounded={"md"}
     _hover={{
       textDecoration: "none",
       bg: useColorModeValue("gray.200", "gray.700"),
+      color: "red",
     }}
     activeClass="active"
     to={children}
@@ -89,6 +51,7 @@ const NavLink = ({ children }) => (
     smooth={true}
     offset={-100}
     duration={500}
+   
   >
     {children}
   </Link>
@@ -100,12 +63,12 @@ export default function Navbar() {
   return (
     <>
       <Box
+      className="mainnavbar"
         bg={useColorModeValue("gray.100", "gray.900")}
         px={4}
         w={"100%"}
         position={"fixed"}
         style={{ zIndex: "999" }}
-    
       >
         <Flex h={16} alignItems={"center"} justifyContent={"space-between"}>
           <IconButton
@@ -116,14 +79,18 @@ export default function Navbar() {
             onClick={isOpen ? onClose : onOpen}
           />
           <HStack spacing={8} alignItems={"center"}>
-            <Box>
-              <Heading size={"lg"}>
+            <Box  marginLeft={0} >
+              <Heading size={"lg"} color={"blue.400"}
+        
+              _hover={{
+                color: "black",
+              }}
+              >
                 <Link
                   style={{ cursor: "pointer" }}
                   px={2}
                   py={1}
                   rounded={"md"}
-                  
                   _hover={{
                     textDecoration: "none",
                     bg: useColorModeValue("gray.200", "gray.700"),
@@ -134,7 +101,7 @@ export default function Navbar() {
                   smooth={true}
                   offset={-100}
                   duration={500}
-                  color={"blue.400"}
+                  color={"red"}
                 >
                   {" "}
                   Shivam{" "}
@@ -146,20 +113,32 @@ export default function Navbar() {
               spacing={4}
               display={{ base: "none", md: "flex" }}
             >
-
-                <div style={{ display: "flex", gap: "1rem", justifyContent: "center" }}>
-              {Links.map((link) => (
-                <NavLink
-                style={({ isActive }) => (isActive ? activeStyle : normal_syle)}
-                key={link}>{link}</NavLink>
-              ))}
-                       </div >
+              <div
+                style={{
+                  display: "flex",
+                  gap: "1rem",
+                  justifyContent: "center",
+                }}
+              >
+                {Links.map((link) => (
+                  <NavLink
+                    style={({ isActive }) =>
+                      isActive ? activeStyle : normal_syle
+                    }
+                    key={link}
+                  >
+                    {link}
+                  </NavLink>
+                ))}
+              </div>
             </HStack>
           </HStack>
           <Flex alignItems={"center"} gap={5}>
             <Button onClick={toggleColorMode}>
               {colorMode === "light" ? <MoonIcon /> : <SunIcon />}
             </Button>
+
+            <Box className="contactbtn">
             <Button
               rounded={"full"}
               bg={"blue.400"}
@@ -183,29 +162,29 @@ export default function Navbar() {
                 smooth={true}
                 offset={-100}
                 duration={500}
-              
               >
                 Contact
-               
               </Link>
-
-             
-
             </Button>
-            <Res/>
+            </Box>
+           
+            
+            <Box className="resume">
+            < Res />
+            </Box>
+            
             <Menu>
-              <MenuButton
+              {/* <MenuButton
                 as={Button}
                 rounded={"full"}
                 variant={"link"}
                 cursor={"pointer"}
-                minW={0}
+                minW={2}
               >
-                 
-                 <AvatarWithRipple/>
-
-              </MenuButton>
+                {/* <AvatarWithRipple /> */}
+              {/* </MenuButton> */} 
               <MenuList>
+                
                 <MenuItem>
                   <a
                     target="_blank"
