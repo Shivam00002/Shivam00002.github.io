@@ -76,9 +76,9 @@ import Restwo from "./Restwo";
               </Text>
             </Heading>
             <Text fontSize={{ base: "md", lg: "lg" }} color={"gray.500"}>
-              A passionate full-stack web developer, who loves to buid cool
+              A passionate full-stack web developer, who loves to build cool
               projects and work in a team. I want to achieve global recognition
-              and exposure with my skillset, toolset and mindset.
+              and exposure with my skillset, toolset, and mindset.
             </Text>
             <Stack direction={{ base: "column", md: "row" }} spacing={4}>
               <Button
