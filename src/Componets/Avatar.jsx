@@ -33,7 +33,7 @@ export default function AvatarWithRipple() {
         _before={{
           content: "''",
           position: 'relative',
-          display: 'block',
+          display: 'block', 
           width: '300%',
           height: '300%',
           boxSizing: 'border-box',
