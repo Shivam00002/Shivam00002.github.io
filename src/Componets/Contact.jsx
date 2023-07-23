@@ -28,7 +28,7 @@ const confetti = {
     primary: "4299E1", // blue.400
     secondary: "BEE3F8", // blue.100
   },
-
+  
   dark: {
     primary: "1A365D", // blue.900
     secondary: "2A4365", // blue.800

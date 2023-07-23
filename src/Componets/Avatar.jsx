@@ -33,7 +33,7 @@ export default function AvatarWithRipple() {
         _before={{
           content: "''",
           position: 'relative',
-          display: 'block',
+          display: 'block', 
           width: '300%',
           height: '300%',
           boxSizing: 'border-box',
@@ -43,6 +43,7 @@ export default function AvatarWithRipple() {
           bgColor: color,
           animation: `2.25s ${pulseRing} cubic-bezier(0.455, 0.03, 0.515, 0.955) -0.4s infinite`,
         }}>
+        
         <Avatar
           src="https://ca.slack-edge.com/T049JC010P9-U04B0EBR7QU-2d5eb55e382a-192"
           size="full"
